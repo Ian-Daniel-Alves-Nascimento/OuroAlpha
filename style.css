@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@keyframes appear {
+    from { 
+        opacity: 0;
+       transform: translateY(100px); 
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+h1{
+    color: #1C1C1C;
+}
+header{
+    display: block;
+    margin: auto;
+    height: 200px;
+    background-color: #2C3E50;
+    box-shadow: 1px 1px px #C9A339;
+}
+
+.Banner{
+    display: block;
+    height: 500px;
+    width: 90vw;
+    margin: auto;
+    margin-top: 60px;
+    background-color: black;
+}
+
+.parceiras{
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+    font-size: 3.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Empresas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    width: 90vw;
+    max-height: 2000px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.Icons{
+    background: linear-gradient(to left,#263646,#1b2631 );
+    height: 350px;
+    width: 250px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px #C9A339;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.Icons:hover{
+    transform: translateY(-8px);
+}
+
+.Icons a {
+    text-decoration: none;
+}
+
+.Icons h1{
+    color: #B48A30;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    transition: .5s;
+    
+}
+
+.Icons:hover h1{
+    color: #E3C16F;
+}
+
+#um{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+#fotoUm {
+    background-image: url(midia/logo-lanchero-azul-1080x1080-1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 10px;
+    height: 70%;
+    width:100%;
+    box-shadow: inset 0px 0px 15px #1b2631;
+    transition: 0.5s;
+}
+
+.Icons:hover #fotoUm{
+    background-image: url(midia/cap3.png.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#dois{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+
+#tres{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+#quatro{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+#cinco{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#seis{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+#sete{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+
+#oito{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
