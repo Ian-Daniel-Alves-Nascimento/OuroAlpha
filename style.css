@@ -11,6 +11,17 @@
     }
 }
 
+@keyframes appear2 {
+    from { 
+        opacity: 0;
+       transform: translateX(-50px); 
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,34 +29,69 @@
 }
 
 body{
-    background-color: #F2F2F2;
+    background: linear-gradient(135deg,#EDE9E0,#8f8d88);
 }
 
-h1{
-    color: #1C1C1C;
-}
 header{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin: auto;
-    height: 200px;
-    background-color: #2C3E50;
-    box-shadow: 1px 1px px #C9A339;
+    height: 130px;
+    background: linear-gradient(to right,#151e27, #2C3E50,#2C3E50,#2C3E50);
+    box-shadow: 1px 1px 5px 1px #C9A339;
+}
+
+header img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 2px 1px #B48A30;
+    animation: appear2 linear;
+    animation-duration: .5s;
+    
+}
+
+header a {
+    display: inline;
+    color: #B48A30;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: .5s;
+    text-shadow: 1px 1px 1px black;
+    padding: 52px 20px 50px 20px;
+   
+}
+
+header a:hover{
+    border-style: none none solid none;
+    padding: 52px 20px 50px 20px;
 }
 
 .Banner{
     display: block;
-    height: 500px;
-    width: 90vw;
+    height: 600px;
+    width:90vw;
     margin: auto;
     margin-top: 60px;
-    background-color: black;
+    background: url(midia/Ouro_Representacao2.png);
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 0px 5px 1px black;
 }
 
 .parceiras{
+    color: #B48A30;
+    background: linear-gradient(to right,#151e27, #2C3E50,#2C3E50,#2C3E50);
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
     margin: 40px 0px 40px 0px;
     font-size: 3.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 0px 2px 1px black;
 }
 
 .Empresas{
@@ -53,6 +99,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 50px;
+    background-color: #EDE9E0;
     width: 90vw;
     max-height: 2000px;
     margin: auto;
@@ -61,11 +108,11 @@ header{
 }
 
 .Icons{
-    background: linear-gradient(to left,#263646,#1b2631 );
     height: 350px;
     width: 250px;
     margin-top: 50px;
-    box-shadow: 1px 1px 5px #C9A339;
+    background: linear-gradient(to bottom,#151e27, #2C3E50,#2C3E50,#2C3E50);
+    box-shadow: 1px 1px 5px black;
     border-radius: 10px;
     transition: .5s;
 }
@@ -80,6 +127,7 @@ header{
 
 .Icons h1{
     color: #B48A30;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
     padding: 30px 0px 0px 0px;
     transition: .5s;
@@ -87,7 +135,7 @@ header{
 }
 
 .Icons:hover h1{
-    color: #E3C16F;
+    text-decoration: underline;
 }
 
 #um{
